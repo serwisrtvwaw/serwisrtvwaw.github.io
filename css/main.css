@@ -10,10 +10,6 @@ strong, h3 {
 
 html, #header.fixed h1 {
 	background-color: #00323c;
-	background: -webkit-linear-gradient(#006450, #00323c); /* For Safari 5.1 to 6.0 */
-  	background: -o-linear-gradient(#006450, #00323c); /* For Opera 11.1 to 12.0 */
-  	background: -moz-linear-gradient(#006450, #00323c); /* For Firefox 3.6 to 15 */
-  	background: linear-gradient(#006450, #00323c); /* Standard syntax */
 	background-image: url(light.jpg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
