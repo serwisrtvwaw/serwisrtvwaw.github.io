@@ -1,0 +1,345 @@
+body {
+	font-size: 1.25em;
+	font-family: 'Ubuntu', Tahoma, sans-serif;
+	color: #00323c;
+}
+
+strong, h3 {
+	font-weight:bold;
+}
+
+html, #header.fixed h1 {
+	background-color: #00323c;
+	background: -webkit-linear-gradient(#006450, #00323c); /* For Safari 5.1 to 6.0 */
+  	background: -o-linear-gradient(#006450, #00323c); /* For Opera 11.1 to 12.0 */
+  	background: -moz-linear-gradient(#006450, #00323c); /* For Firefox 3.6 to 15 */
+  	background: linear-gradient(#006450, #00323c); /* Standard syntax */
+	background-image: url(light.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center center;
+}
+
+#header.fixed {
+	background-position: top center;
+}
+
+section, footer {
+	position:relative;
+	z-index:500;
+	background:white;
+	padding: 0 .5em;
+	margin:0;
+}
+
+a {
+	color: #67e0b3;
+	transition: color .5s ease;
+}
+
+a:hover, p.message, strong.number {
+	color: #70cde6;
+	transition: 0s;
+}
+
+#header, #menu a, #header h1 {
+	/*background: #3fa9f5;*/
+}
+
+#menu a {
+	transition: background .5s ease;
+}
+
+#menu a:hover {
+	background: white;
+	color: #70cde6;
+	transition: 0.1s;
+}
+
+#header a, #menu a{
+	color:white;
+}
+
+a {
+	text-decoration:none;
+}
+
+p, h3, ul, #map, #view {
+	max-width:33em;
+	font-size:1em;
+	margin: 0 auto;
+	padding: .5em 0;
+}
+
+h3 {
+	/*margin-bottom:-1em;*/
+}
+
+ul {
+	padding-left:2em;
+	list-style: circle;
+}
+
+h1, h2 {
+	font-size: 2em;
+	max-width:16.5em;
+	margin: 0 auto;
+	padding: .5em 0;
+	text-align:center;
+	font-weight:normal;
+}
+
+strong {
+	white-space: nowrap;
+}
+
+#header h1 {
+	font-size:3em;
+	color:white;
+	margin-bottom:0;
+	padding-top:1.333em;
+}
+
+#header h1, #header h2 {
+	text-align:center;
+}
+
+#header h1, #menu a {
+	text-transform:lowercase;
+}
+
+#header h1 {
+	padding-bottom:0;
+}
+
+#header h2 {
+	padding-top:0;
+}
+
+#header {
+	position:relative;
+	min-height: 62vh;
+}
+
+#header.fixed h1 {
+	font-size:1.5em;
+	line-height:2em;
+	padding-left:.5em;
+	padding-top:0;
+	
+	position:fixed;
+	top:0; right:0; left:0;
+	z-index:999;
+	max-width:100%;
+	text-align:left;
+	height:2em;
+}
+
+#header.fixed h1 {
+	-moz-box-shadow: 0 0 0.25em 0.125em rgba(0,0,0,.3);
+	-webkit-box-shadow: 0 0 0.25em 0.125em rgba(0,0,0,.3);
+	box-shadow:0 0 0.25em 0.125em rgba(0,0,0,.3);
+}
+
+#header.fixed h2 {
+	display:none;
+}
+
+#menu {
+	position:absolute;
+	bottom:0;
+	height:3em;
+	width:100%;
+}
+
+#header.fixed #menu {
+	position:fixed;
+	top:0; right:0;
+	z-index:1000;
+	width:50%;
+	transition: width .5s ease;
+}
+
+#menu ul {
+	padding:0;
+	margin:0;
+	max-width:100%;
+}
+
+#menu li {
+	margin:0 auto;
+	padding:0;
+	display: block;
+	list-style: none;
+	float:left;
+	width:25%;
+	text-align:center;
+	line-height:3em;
+}
+
+#menu li a, #header.fixed #menu #menu01 {
+	display:block;
+	border-left: 1px solid white;
+}
+
+#header #menu #menu01 {
+	border-left: 0 none transparent;
+}
+
+section:before {
+	content: counter(myIndex);
+	display: block;
+	width: 3em; 
+	height: 3em;
+	position:absolute;
+	left:50%;
+	top:-1.5em;
+	margin-left:-1.5em;
+	-moz-border-radius: 1.5em; 
+	-webkit-border-radius: 1.5em;
+	border-radius: 1.5em;
+	background: #00323c;
+	color:white;
+	line-height:3em;
+	text-align:center;
+}
+
+section {
+	min-height:100vh;
+	height: 100%;
+	counter-increment: myIndex;
+}
+
+section h1 {
+	padding-top:2em;
+}
+
+section p:last-child, section ul:last-child {
+	padding-bottom:3em;
+}
+
+#naprawa {
+	background:transparent;
+	color:white;
+}
+
+#naprawa p {
+	font-size:1.25em;
+	background: rgba(255,255,255,.8);
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#ccffffff', endColorstr='#ccffffff'); /* IE */
+	color:#00323c;
+	padding:1em;
+}
+
+#naprawa p:last-child {
+	margin-bottom:2em;
+}
+
+
+
+#kontakt {
+	background:#00323c;
+	color: white;
+}
+
+#map, #view {
+    width: 100%;
+    height: 11em;
+	display:block;
+}
+
+footer p, p.caption {
+	text-align:center;
+}
+
+@media screen and (min-width: 100em) {
+	body {
+		font-size: 1.5em;
+	}
+}
+
+@media screen and (max-width: 51em) {
+	/* Screen Size smaller than 816 px */
+	/* That is smaller than (33em + 2 * .5em) * 1.5em */ 
+	body {
+		font-size: 1.25em;
+	}
+	
+	#header.fixed h1 {
+		visibility: hidden;
+	}
+
+	#header.fixed #menu {
+		width:100%;
+		background-color: #006450;
+		background: -webkit-linear-gradient(#006450, #00323c); /* For Safari 5.1 to 6.0 */
+  		background: -o-linear-gradient(#006450, #00323c); /* For Opera 11.1 to 12.0 */
+  		background: -moz-linear-gradient(#006450, #00323c); /* For Firefox 3.6 to 15 */
+  		background: linear-gradient(#006450, #00323c); /* Standard syntax */
+  		background-image: url(light.jpg);
+  		background-size: cover;
+		background-attachment: fixed;
+		background-position: center center;
+		-moz-box-shadow: 0 0 0.25em 0.125em rgba(0,0,0,.3);
+		-webkit-box-shadow: 0 0 0.25em 0.125em rgba(0,0,0,.3);
+		box-shadow:0 0 0.25em 0.125em rgba(0,0,0,.3);
+	}
+	
+	#header.fixed #menu #menu01 {
+		border-left: 0 none transparent;
+	}
+}
+
+@media screen and (max-width: 43em) {
+	/* Screen Size smaller than 688 px */
+	body {
+		font-size: 1em;
+	}
+}
+
+@media screen and (max-width: 35em) {
+	/* Screen Size smaller than 560 px */
+	#header h1 {
+		font-size:3em;
+	}
+}
+
+@media screen and (max-width: 23em) {
+	#menu a {
+		font-size:.8em;
+		line-height:3.75em;
+	}
+}
+
+/* IE8 and below */
+#header {
+	height : 20em\9;
+}
+
+#naprawa {
+	height : 33em\9;
+}
+
+section {
+	padding-bottom : 3em\9;
+}
+
+/* IE6 and below */
+p, h3, ul, #map, #view {
+	_width : 33em;
+}
+
+h1, h2 {
+	_width : 16.5em;
+}
+
+section h1 {
+	_padding-top :.5em;
+}
+
+#menu ul {
+	_margin : 0 auto;
+}
